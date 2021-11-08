@@ -13,15 +13,17 @@ const Form = () => {
   return (
     <div>
       <form>
-        <label>Name:</label>
+        <label for="name">Name:</label>
         <input
+          id="name"
           onChange={(event) =>
             setFilmForm({ ...filmForm, title: event.target.value })
           }
           type="text"
         ></input>
-        <label>Age:</label>
+        <label for="age">Age:</label>
         <input
+          id="age"
           onChange={(event) =>
             setFilmForm({ ...filmForm, age: event.target.value })
           }

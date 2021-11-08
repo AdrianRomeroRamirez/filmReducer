@@ -12,7 +12,9 @@ const Item = ({ film }) => {
     <li className="film-list__item">
       <p>{film.title}</p>
       <p>{film.age}</p>
-      <span onClick={handleDelete}>x</span>i
+      <span data-testid={`delete${film.id}`} onClick={handleDelete}>
+        x
+      </span>
     </li>
   );
 };
