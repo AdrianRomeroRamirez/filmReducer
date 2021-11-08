@@ -1,0 +1,6 @@
+.film-list__item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
