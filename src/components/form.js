@@ -8,6 +8,7 @@ const Form = () => {
 
   const handleAdd = () => {
     filmStore.dispatch(actions.addFilm(filmForm));
+    setFilmForm({ title: "", age: "" });
   };
 
   return (
@@ -29,7 +30,7 @@ const Form = () => {
           }
           type="text"
         ></input>
-        <button type="button" onClick={handleAdd}>
+        <button type="reset" onClick={handleAdd}>
           Add
         </button>
       </form>
